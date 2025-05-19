@@ -67,9 +67,9 @@ namespace trading {
     void OrderBook::print() const {
         std::cout << "Order book for: " << symbol_ << std::endl;
         std::cout << std::setw(10) << "BID SIZE" << " | " 
-                  << std::setw(10) << "BID PRICE" << " | "
-                  << std::setw(10) << "ASK SIZE" << " | "
-                  << std::setw(10) << "ASK PRICE" << " | " << std::endl;
+                    << std::setw(10) << "BID PRICE" << " | "
+                    << std::setw(10) << "ASK SIZE" << " | "
+                    << std::setw(10) << "ASK PRICE" << " | " << std::endl;
         std::cout << std::string(46, '-') << std::endl;
 
         auto bidIt = bids_.begin();

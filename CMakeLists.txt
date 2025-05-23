@@ -10,7 +10,11 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 # Add subdirectories
 add_subdirectory(src)
 
-# Optional: Enable testing
-enable_testing()
-add_subdirectory(test)
+#Main Executable
+add_executable(HybridTradingSystem src/main.cpp)
+target_link_libraries(HybridTradingSystem market_data)
+
+# # Optional: Enable testing
+# enable_testing()
+# add_subdirectory(test)
 

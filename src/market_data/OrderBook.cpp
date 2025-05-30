@@ -96,4 +96,8 @@ namespace trading {
             std::cout << std::endl;
         }
     }
+
+    std::string OrderBook::getSymbol() const {
+        return symbol_;
+    }
 }

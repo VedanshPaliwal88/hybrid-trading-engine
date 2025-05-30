@@ -20,6 +20,8 @@ namespace trading {
 
         void print() const;
 
+        std::string getSymbol() const;
+
         private:
         std::string symbol_;
         std::map<double, int, std::greater<double>> bids_;

@@ -12,8 +12,7 @@ add_subdirectory(src)
 
 #Main Executable
 add_executable(HybridTradingSystem src/main.cpp)
-target_link_libraries(HybridTradingSystem market_data)
-
+target_link_libraries(HybridTradingSystem market_data execution)
 # # Optional: Enable testing
 # enable_testing()
 # add_subdirectory(test)

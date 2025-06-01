@@ -7,7 +7,10 @@ namespace trading {
         std::string orderId = generateOrderId();
 
         Order newOrder(orderId, symbol, isBuy, price, quantity, type);
-        orders_[orderId] = newOrder;
+        // orders_[orderId] = newOrder;
+        // this creats orders_[orderId] = order then assigns new order (default constructor problem)
+        //alternate:
+        orders_.insert({orderId, newOrder});
 
         if (statusCallback_) {
             statusCallback_(newOrder);
